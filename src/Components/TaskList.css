@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+body{
+    font-family: 'Source Code Pro', monospace;
+    color:white;
+    background-color: #e2e2e2;
+}
+.Listdiv{
+    width:70%;
+    max-width: 100%;
+    margin:0 auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border:2px solid black;
+    padding:40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    background-color:teal;
+    margin-top:1.2rem;
+}
+@media only screen and (max-width: 900px) {
+    .Listdiv{
+        flex-direction : column;
+        margin-top:1.2rem;
+    }
+    .Listdiv div{
+        margin-top:10px;
+    }
+}
