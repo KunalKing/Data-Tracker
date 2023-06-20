@@ -22,14 +22,10 @@ const App = () => {
   return (
     <div>
    <TaskList 
-   taskDate={Tasks[0].taskDate}
-   taskDesc={Tasks[0].taskDesc}
-   taskStatus={Tasks[0].taskStatus}
+   Tasks={Tasks[0]}
    />
    <TaskList 
-    taskDate={Tasks[1].taskDate}
-    taskDesc={Tasks[1].taskDesc}
-    taskStatus={Tasks[1].taskStatus}
+   Tasks={Tasks[1]}
    />
    </div>
   );

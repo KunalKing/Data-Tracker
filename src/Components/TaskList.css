@@ -17,12 +17,23 @@ body{
     background-color:teal;
     margin-top:1.2rem;
 }
+.Listdiv .date__object, .task__details, .task_status {
+    width: 33.3%;
+    max-width: 100%;
+}
 @media only screen and (max-width: 900px) {
     .Listdiv{
         flex-direction : column;
         margin-top:1.2rem;
     }
     .Listdiv div{
-        margin-top:10px;
+     margin-top:5px;
+    }
+   .date__object{
+    display:flex;
+    justify-content: space-between;
+    } 
+   .Listdiv .task__details, .task_status {
+       width:100%;
     }
 }
