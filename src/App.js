@@ -1,34 +1,35 @@
-import './App.css';
-import TaskList from './Components/TaskList';
+import Task from './Components/Data/Task';
 
-const App = () => {
-
-  //Array Data Objects
+function App() {
   const Tasks = [
-  {
-    id:'t1',
-    taskDate: new Date(2022, 6, 19),
-    taskDesc: 'Data Tracker Creation',
-   taskStatus : 'Work in progress',
-  },
-  {
-    id:'t2',
-    taskDate: new Date(2022, 6, 20),
-    taskDesc: 'Data Tracker Modification',
-    taskStatus : 'Done',
-  },
-];
+    {
+      id: 'e1',
+      Task_Desc: 'Development',
+      date: new Date(2020, 7, 14),
+      Status: 'Wip',
+    },
+    { id: 'e2', 
+    Task_Desc: 'Development',
+    date: new Date(2020, 7, 14),
+    Status: 'Wip', 
+    },
+    {
+      id: 'e3',
+      Task_Desc: 'Development',
+      date: new Date(2020, 7, 14),
+      Status: 'Wip',
+    },
+    {
+      id: 'e4',
+      Task_Desc: 'Development',
+      date: new Date(2020, 7, 14),
+      Status: 'Wip',
+    },
+  ];
 
   return (
-    <div>
-   <TaskList 
-   Tasks={Tasks[0]}
-   />
-   <TaskList 
-   Tasks={Tasks[1]}
-   />
-   </div>
+   <Task List={Tasks}/>
   );
-}
+};
 
 export default App;
