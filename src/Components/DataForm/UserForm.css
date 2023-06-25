@@ -1,0 +1,38 @@
+form input[type="radio"] {
+    display: none;
+}
+
+.Work_Status label {
+  padding: 10px 20px;
+  background-color: orange;
+  border: thin solid darkorange;
+  border-radius: 10px;
+  margin:5px;
+  display: inline-block;
+}
+
+form input[type="radio"]:checked + label {
+    background-color: darkblue;
+    cursor: default;
+    color: #E6E6E6;
+}
+
+/*Form Css*/
+
+.User-form{
+width: 70%;
+margin: 0 auto;
+text-align: center;
+background-color: #DDFFE7;
+padding:1%;
+box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+border-radius: 12px;
+}
+
+.Userform_outerdiv{
+    margin:20px 0px;
+}
+
+.new-form__control label{
+    color:black;
+}

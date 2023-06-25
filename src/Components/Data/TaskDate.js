@@ -1,7 +1,7 @@
 import './TaskList.css';
 import './TaskDate.css';
 
-function TaskDate(props){
+const TaskDate = (props) =>{
          //Helper functions In jsx code for Date
     const month = props.date.toLocaleString('en-US', { month: 'long' });
     const day =  props.date.toLocaleString('en-US', { day: '2-digit' });

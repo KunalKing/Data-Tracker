@@ -1,6 +1,7 @@
 import Task from './Components/Data/Task';
+import UserFormUI from './Components/DataForm/UserFormUI';
 
-function App() {
+const App = () => {
   const Tasks = [
     {
       id: 'e1',
@@ -28,7 +29,10 @@ function App() {
   ];
 
   return (
+    <div>
+    < UserFormUI />
    <Task List={Tasks}/>
+   </div>
   );
 };
 

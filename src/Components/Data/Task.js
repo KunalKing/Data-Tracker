@@ -2,7 +2,7 @@ import './Task.css';
 import TaskList from './TaskList';
 import Card from '../UI/Card';
 
-function Task(props) {
+const Task = (props) => {
     return(
         <Card className='Data_List'>
         <TaskList
